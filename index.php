@@ -82,11 +82,13 @@ i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
         </nav>
         <div class="container d_flex space_between">
             <?php foreach ($dischi as $disco => $value) { ?>
-                <div class="contenitore text_center color_white d_flex_column space_around">
+                <div class="contenitore text_center color_white">
                     <img src="<?php echo $value['img'];?>" alt="">
-                    <h1> <?php echo $value["title"]; ?> </h1>
-                    <p> <?php echo $value["author"]; ?> </p>
-                    <p> <?php echo $value["year"]; ?> </p>
+                    <div class="text d_flex_column space_around">
+                        <h1> <?php echo $value["title"]; ?> </h1>
+                        <p> <?php echo $value["author"]; ?> </p>
+                        <p> <?php echo $value["year"]; ?> </p>
+                    </div>
                 </div>
             <?php } ?>
         </div>

@@ -34,11 +34,14 @@ nav img{
     margin: 5px;
 }
 .contenitore>img{
-    width: 125px;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
 }
-.contenitore>h1{
-    font-size: 22px;
-    margin: 5px;
+.contenitore>.text>h1{
+    font-size: 20px;
+    margin: 10px;
 }
 .d_flex{
     display: flex;
@@ -59,4 +62,7 @@ nav img{
 }
 .color_white{
     color:white;
+}
+.text{
+    height: 100px;
 }
