@@ -5,54 +5,64 @@ i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
 <?php 
     $dischi = [
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
+           "title" => "New Jersey",
+           "author" => "Bon Jovi",
+           "year" => "1988"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://img.discogs.com/vknPDdrqRbT92pNRX0W4I5N91jg=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1246953-1448927086-6590.jpeg.jpg",
+           "title" => "Live at Wembley 86",
+           "author" => "Queen",
+           "year" => "1992"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://images-na.ssl-images-amazon.com/images/I/41JD3CW65HL.jpg",
+           "title" => "Ten's Summoner's Tales",
+           "author" => "Sting",
+           "year" => "1993"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://cdn2.jazztimes.com/2018/05/SteveGadd-800x723.jpg",
+           "title" => "Steve Gadd Band",
+           "author" => "Steve Gadd Band",
+           "year" => "2018"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://images-na.ssl-images-amazon.com/images/I/810nSIQOLiL._SY355_.jpg",
+           "title" => "Brave new World",
+           "author" => "Iron Maiden",
+           "year" => "2000"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://upload.wikimedia.org/wikipedia/en/9/97/Eric_Clapton_OMCOMR.jpg",
+           "title" => "One more car, one more raider",
+           "author" => "Eric Clapton",
+           "year" => "2002"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://images-na.ssl-images-amazon.com/images/I/51rggtPgmRL.jpg",
+           "title" => "Made in Japan",
+           "author" => "Deep Purple",
+           "year" => "1972"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://images-na.ssl-images-amazon.com/images/I/81r3FVfNG3L._SY355_.jpg",
+           "title" => "And Justice for All",
+           "author" => "Metallica",
+           "year" => "1988"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://img.discogs.com/KOBsqQwKiNKH-q927oHMyVdDzSo=/fit-in/596x596/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6406665-1418464475-6120.jpeg.jpg",
+           "title" => "Hard Wired",
+           "author" => "Dave Weckl",
+           "year" => "1994"
         ],
         [
-           "img" => "img/logo.png",
-           "title" => "Titolo",
-           "description" => "Descrizione"
+           "img" => "https://m.media-amazon.com/images/I/71K9CbNZPsL._SS500_.jpg",
+           "title" => "Bad",
+           "author" => "Michael Jacjson",
+           "year" => "1987"
         ],
     ]
 ?>
@@ -65,14 +75,18 @@ i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container d_flex">
+        <nav>
+            <div class="logo_nav">
+                <img src="img/logo.png" alt="">
+            </div>
+        </nav>
+        <div class="container d_flex space_between">
             <?php foreach ($dischi as $disco => $value) { ?>
-                <div class="contenitore">
+                <div class="contenitore text_center color_white d_flex_column space_around">
                     <img src="<?php echo $value['img'];?>" alt="">
                     <h1> <?php echo $value["title"]; ?> </h1>
-                    <?php for ($i = 0; $i < count($value["description"]) ; $i++) { ?>
-                        <p> <?php echo $value["description"]; ?> </p>
-                    <?php } ?> 
+                    <p> <?php echo $value["author"]; ?> </p>
+                    <p> <?php echo $value["year"]; ?> </p>
                 </div>
             <?php } ?>
         </div>

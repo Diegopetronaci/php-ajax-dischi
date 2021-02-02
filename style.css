@@ -3,20 +3,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: grey;
+}
+nav{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo_nav{
+    width: 70%;
+    margin: auto;
+}
+nav img{
+    width: 40px;
+    margin: 10px;
+}
 .container{
-    width:70%;
+    width:80%;
     height: 10px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 125px;
 }
-div{
+.contenitore{
+    width: 200px;
+    background-color: black;
     padding: 20px;
-    margin: 0 20px;
+    margin: 5px;
 }
 .contenitore>img{
-    width: 100px;
+    width: 125px;
+}
+.contenitore>h1{
+    font-size: 22px;
+    margin: 5px;
 }
 .d_flex{
     display: flex;
     flex-wrap: wrap;
+}
+.d_flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.space_around{
+    justify-content: space-around;
+}
+.space_between{
+    justify-content: space-between;
+}
+.text_center{
+    text-align: center;
+}
+.color_white{
+    color:white;
 }
