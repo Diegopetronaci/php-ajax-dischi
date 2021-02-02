@@ -10,50 +10,50 @@ i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
         ],
         [
-           "img" => __DIR__ . "/img/logo.png",
+           "img" => "img/logo.png",
            "title" => "Titolo",
            "description" => "Descrizione"
-        ],    
+        ],
     ]
 ?>
 <!DOCTYPE html>
@@ -68,7 +68,7 @@ i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
         <div class="container d_flex">
             <?php foreach ($dischi as $disco => $value) { ?>
                 <div class="contenitore">
-                    <img src='$value["title"]' alt="">
+                    <img src="<?php echo $value['img'];?>" alt="">
                     <h1> <?php echo $value["title"]; ?> </h1>
                     <?php for ($i = 0; $i < count($value["description"]) ; $i++) { ?>
                         <p> <?php echo $value["description"]; ?> </p>
