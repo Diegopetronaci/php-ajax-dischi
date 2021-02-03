@@ -72,12 +72,12 @@ i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
         <nav>
             <div class="logo_nav">
-                <img src="img/logo.png" alt="">
+                <img src="assets/img/logo.png" alt="">
             </div>
         </nav>
         <div class="container d_flex space_between">

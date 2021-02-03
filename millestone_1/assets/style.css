@@ -17,7 +17,7 @@ nav{
     width: 70%;
     margin: auto;
 }
-nav img{
+.logo_nav img{
     width: 40px;
     margin: 10px;
 }
@@ -65,4 +65,7 @@ nav img{
 }
 .text{
     height: 100px;
+}
+h2{
+    margin-top: 100px;
 }
